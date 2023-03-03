@@ -1,0 +1,149 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    width: 1200px;
+    height: 800px;
+    background-color: rgb(175, 172, 172);
+    
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.content img {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.content-info {
+    width: 50%;
+    margin-left: 100px;
+}
+
+.content img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.content-info h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: black;
+}
+
+.content-info p {
+    color: rgb(173, 171, 171);
+}
+
+.info-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;    
+}
+
+.info-icon i {
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+
+
+.btn {
+    margin-top: 50px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.btn-hover:hover {
+    background-color: black;
+    color: white;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.content-info a{
+    
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* đoạn mã CSS cho thiết bị có độ rộng màn hình tối đa là 600px */
+    .content {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .content img {
+        width: 10rem;
+        height: 10rem;
+        position: relative;
+        left: 8rem;
+        top: 2rem;
+    }
+
+    .content-info h1{
+        position: relative;
+        left: 5rem;
+        bottom: -1rem;
+    }
+
+    .content-info p{
+        position: relative;
+        left: 7rem;
+        bottom: 6rem;
+    }
+
+    .content-info a {
+        position: relative;
+        bottom: 3rem;
+        left: 7rem;
+    }
+
+    .btn {
+        position: relative;
+        bottom: 10rem;
+        left: 6rem;
+    }
+
+    .info-icon {
+        position: relative;
+        left: 2.5rem;
+    }
+  }
